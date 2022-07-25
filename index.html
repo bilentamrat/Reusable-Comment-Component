@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <script defer type="module" src="./js/index.js"></script>
+    <title>Reusable Comment Component</title>
+  </head>
+  <body>
+    <header id="header">
+      <h1>Comment component</h1>
+    </header>
+    <section class="main-container">
+      <user-comment name="" email="" comment=""></user-comment>
+      <user-comment name="" email="" comment=""></user-comment>
+      <form id="form" action="/">
+        <div class="input-control">
+          <label for="name" class="label">Name</label>
+          <input
+            id="name"
+            name="name"
+            type="text"
+            placeholder="Insert your name..."
+          />
+          <div class="error"></div>
+        </div>
+        <div class="input-control">
+          <label for="email" class="label">Email</label>
+          <input
+            id="email"
+            name="email"
+            type="text"
+            placeholder="example@domain.com"
+          />
+          <div class="error"></div>
+        </div>
+        <div class="input-control">
+          <textarea
+            id="comment"
+            cols="50"
+            rows="4"
+            placeholder="Please insert your comments..."
+          ></textarea>
+          <div class="error"></div>
+        </div>
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+  </body>
+</html>
